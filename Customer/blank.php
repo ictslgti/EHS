@@ -36,6 +36,53 @@
                             <div class="card-body">
                            <!-- your content start  -->
                             Welcome to Hire Worker!
+                            <!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Dashboard</title>
+</head>
+<body>
+
+<?php
+// Simulated user data (replace with actual user authentication and data retrieval)
+$user = [
+    'id' => 1,
+    'username' => 'john_doe',
+    'name' => 'John Doe',
+    'email' => 'john@example.com',
+    // Other user data...
+];
+
+// Simulated user orders (replace with actual data retrieval)
+$orders = [
+    ['id' => 101, 'date' => '2023-08-15', 'total' => 150.00],
+    ['id' => 102, 'date' => '2023-08-16', 'total' => 200.00],
+    // Other orders...
+];
+?>
+
+<h1>Welcome, <?php echo $user['name']; ?>!</h1>
+<p>Your username: <?php echo $user['username']; ?></p>
+<p>Your email: <?php echo $user['email']; ?></p>
+
+<h2>Your Orders:</h2>
+<table>
+    <tr>
+        <th>Order ID</th>
+        <th>Order Date</th>
+        <th>Total Amount</th>
+    </tr>
+    <?php foreach ($orders as $order) { ?>
+        <tr>
+            <td><?php echo $order['id']; ?></td>
+            <td><?php echo $order['date']; ?></td>
+            <td>$<?php echo number_format($order['total'], 2); ?></td>
+        </tr>
+    <?php } ?>
+</table>
+
+</body>
+</html>
 
 
                            <!-- your content finish  -->

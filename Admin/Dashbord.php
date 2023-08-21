@@ -45,6 +45,9 @@
                                 <h1>500</h1>
                             </div>
                           </div>
+                        
+                         
+                         
                           <html>
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -75,7 +78,7 @@
     </script>
   </head>
   <body>
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
+    <div id="piechart" style="width: 500px; height: 400px;"></div>
   </body>
 </html>
 <html>
@@ -110,7 +113,7 @@
     </script>
   </head>
   <body>
-    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div" style="width: 600px; height: 400px;"></div>
   </body>
 </html>
 
