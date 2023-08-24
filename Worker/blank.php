@@ -91,7 +91,7 @@
                                      </div>
                                      <div class="column">
                                    
-                                        <div style='width: 500px;height: 300px;'>
+                                        <div style='width: 450px;height: 250px;'>
                                             <canvas id="myChart"></canvas>
                                         </div>
 
@@ -138,17 +138,80 @@
                                                 }
                                             });
                                         </script>
-                              
+                              <?php
+// Your PHP code to fetch job statistics here
+
+// Sample data (replace with actual data)
+$totalJobs = 100;
+$completedJobs = 70;
+$pendingJobs = 30;
+?>
+
+<html>
+<head>
+    <title>Worker Dashboard</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+      <center> <h3>Job Statistics Chart</h3></center>
+       <canvas id="jobChart" width="400" height="200"></canvas>
+
+    <script>
+        // Job statistics data
+        var data = {
+            labels: ['Total Jobs', 'Completed Jobs', 'Pending Jobs'],
+            datasets: [{
+                label: 'Job Statistics',
+                data: [<?php echo $totalJobs; ?>, <?php echo $completedJobs; ?>, <?php echo $pendingJobs; ?>],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        // Chart configuration
+        var config = {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        // Create the chart
+        var ctx = document.getElementById('jobChart').getContext('2d');
+        var jobChart = new Chart(ctx, config);
+    </script>
+</body>
+</html>
+
                                         </div>
-                                      <div id='chart_div' style='width: 500px; height: 250px;'></div>
+                                      <div id='chart_div' style='width: 450px; height: 200px;'></div>
                                       <div class="col-md-3">
-                    <div class="card">
-                      <div class="card-header">
-                        No of Workers
-                      </div>
-                      <div class="card-body">
-                        <h1>50</h1>
-                      </div>
+                                      <div class="card">
+                                      <div class="card-header">
+                                           No of Workers
+                                      </div>
+                                      <div class="card-body">
+                                      <h1>50</h1>
+                                     </div>
+                      
+
+
+                      
 
                                 <!-- your content finish  -->
                             </div>
