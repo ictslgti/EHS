@@ -23,7 +23,10 @@
                     <div class="col-lg-12 p-r-0 title-margin-right">
                         <div class="card">
                             <div class="card-header">
-                                <h5> Employees</h5>
+                                <h3> Employees</h3>
+                                 <p style="color:green;"><marquee><h3> <h3>Welcome to Customer!</h3></marquee>
+                                <center> <img src ="download.png" alt="Italian Trulli">
+</center>
                             </div>
                             <div class="card-body">
                                 <!-- your content start  -->
@@ -32,6 +35,7 @@
 
                                 <head>
                                     <title>Customer Dashboard</title>
+                                    
                                 </head>
 
                                 <body>
