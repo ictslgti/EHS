@@ -32,20 +32,20 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-body" style="width: 0px; height: 0px;"></div>
-                                
-                                  
-                                        <h3> Admin Dashboard</h3>
-                                        <p style="color:green;"><marquee><h3> <h3>Welcome to Hire Worker!</h3></marquee>
-                                        <img src="wellcomein.jpg" alt="wellcomein">
-                                      
-                                        <img src="sri-lanka-map-location.jpg"style="float: right;" alt="Workplace" usemap="#workmap" width="200" height="100">
-                            <map name="workmap">
 
-                                    <center ><img src="imagesadmin.jpg" alt="Italian Trulli"></center >
+
+                                <h3> Admin Dashboard</h3>
+                                <marquee>
+                                    <h3>
+                                        <p style="color:pink;"> Welcome to Hire Worker!
+                                    </h3>
+                                </marquee>
+
+                                <center><img src="imagesadmin.jpg" alt="Italian Trulli"></center>
                                 <div class="card-body" style="width: 20px; height: 10px;"></div>
                             </div>
                             <div class="card-body">
-                         
+
 
                                 <!-- your content start  -->
                                 <div class="row">
@@ -227,42 +227,50 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 <html>
+
 <head>
     <title>Technical Support Admin Dashboard</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        #sidebar {
-            width: 250px;
-            background-color: #f4f4f4;
-            float: left;
-            padding: 15px;
-        }
-        #content {
-            margin-left: 250px;
-            padding: 15px;
-        }
-        .card {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            margin-bottom: 15px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #sidebar {
+        width: 250px;
+        background-color: #f4f4f4;
+        float: left;
+        padding: 15px;
+    }
+
+    #content {
+        margin-left: 250px;
+        padding: 15px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin-bottom: 15px;
+    }
     </style>
 </head>
+
 <body>
     <div id="Blue">
-       <center> <<h1 style="border: 2px solid DodgerBlue;">Technical Support Admin Dashboard</h1></center>
+        <center>
+            <<h1 style="border: 2px solid DodgerBlue;">Technical Support Admin Dashboard</h1>
+        </center>
     </div>Technical Support Admin Dashboard
     <div id="sidebar">
         <h2>Menu</h2>
@@ -290,10 +298,15 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>Settings</h2>
             <!-- Settings content goes here -->
         </div>
-    </div>
-</body>
-</html>
+    </div> <img src="wellcomein.jpg" alt="wellcomein">
 
+    <img src="sri-lanka-map-location.jpg" style="float: right;" alt="Workplace" usemap="#workmap" width="500"
+        height="400">
+    <map name="workmap">
+</body>
+
+</html>
+<
 
 <!-- your content finish  -->
 </div>

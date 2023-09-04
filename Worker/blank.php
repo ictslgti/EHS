@@ -27,10 +27,10 @@
                             <div class="card-header">
                                 <h1> Employees</h1>
                                 <center>
-                                    <p style="color:green;">
+                                    
                                         <marquee>
                                             <h3>
-                                                <h3>Welcome to Hire Worker!</h3>
+                                            <p style="color:maroon;"> Welcome to Hire Worker!</h3>
                                         </marquee>
 
                                         <img src="workers.png" style="float: right;" alt="Italian Trulli">
@@ -127,6 +127,7 @@
             }
         });
     </script>
+
 
 </body>
 
