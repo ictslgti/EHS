@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +9,10 @@
 </head>
 
 <body>
-  
-<?php include_once('nav.php');?>
 
-<?php include_once('head.php');?>
+    <?php include_once('nav.php');?>
+
+    <?php include_once('head.php');?>
 
     <div class="content-wrap">
         <div class="main">
@@ -24,204 +21,344 @@
                     <div class="col-lg-12 p-r-0 title-margin-right">
                         <div class="card">
                             <div class="card-header">
-                               <h5> Employees</h5>
+                                <h3> <u>Employees</u> Customer Dashboard
+                                </h3>
+                                <p style="color:green;">   <img src="download.png"style="float: right;" alt="Italian Trulli"width="150" height="150">
+                                    <marquee>
+                                        <h3>
+                                        <h3 style="color:pink;"> Welcome to Customer!</h3>
+                                    </marquee>
+                                
+    
                             </div>
                             <div class="card-body">
-                           <!-- your content start  -->
-                            Welcome to Hire Worker!
-                            <!DOCTYPE html>
-<html>
-<head>
-    <title>Customer Dashboard</title>
-</head>
-<body>
+                                <!-- your content start  -->
+                                Welcome to Hire Worker!
+                                <html>
 
-<?php
-// Simulated user data (replace with actual user authentication and data retrieval)
-$user = [
-    'id' => 1,
-    'username' => 'john_doe',
-    'name' => 'John Doe',
-    'email' => 'john@example.com',
-    // Other user data...
-];
+                                <head>
+                                    <title>Customer Dashboard</title>
 
-// Simulated user orders (replace with actual data retrieval)
-$orders = [
-    ['id' => 101, 'date' => '2023-08-15', 'total' => 150.00],
-    ['id' => 102, 'date' => '2023-08-16', 'total' => 200.00],
-    // Other orders...
-];
-?>
-<div class="row">
-    <div class="column" >
-<h1>Welcome, <?php echo $user['name'];    ?>!</h1>
-<p>Your username: <?php echo $user['username']; ?></p>
-<p>Your email: <?php echo $user['email']; ?></p>
-    </div>
-    <div class="column" >
-<center><h2>Your Orders:</h2></center>
-<table >
-    <tr>
-        <th>Order ID</th>
-        <th>Order Date</th>
-        <th>Total Amount</th>
-    </tr>
-    <?php foreach ($orders as $order) { ?>
-        <tr>
-            <td><?php echo $order['id']; ?></td>
-            <td><?php echo $order['date']; ?></td>
-            <td>$<?php echo number_format($order['total'], 2); ?></td>
-        </tr>
-    <?php } ?>
-</table>
-    </div>
-</div>
-<!DOCTYPE html>
-<html>
-<head>
-   
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-<div style="width: 70%; margin-top:0;">
-    <canvas id="headcountChart"></canvas>
-</div>
+                                </head>
 
-<script>
-// AJAX request to fetch data from the server
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "get_employee_data.php", true);
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        const data = JSON.parse(xhr.responseText);
-        renderChart(data);
-    }
-};
-xhr.send();
+                                <body>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                No of Customer
+                                            </div>
+                                            <div class="card-body">
+                                                <h1>1 to 100 </h1>
+                                            </div>
+                                        </div>
 
-// Function to render the chart
-function renderChart(data) {
-    const ctx = document.getElementById("headcountChart").getContext("2d");
-    const departments = data.map(entry => entry.department);
-    const headcounts = data.map(entry => entry.headcount);
+                                    </div>
+                                    <div class="row">
 
-    const chart = new Chart(ctx, {
-        type: "bar",
-        data: {
-            labels: departments,
-            datasets: [{
-                label: "Headcount by Department",
-                data: headcounts,
-                backgroundColor: "rgba(75, 192, 192, 0.5)",
-                borderColor: "rgba(75, 192, 192, 1)",
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-}
-</script>
-<script>
-window.onload = function () {
- 
-var chart = new CanvasJS.Chart("chartContainer", {
-	title: {
-		text: "Employment in US Breweries"
-	},
-	subtitles: [{
-		text: "2007 to 2016"
-	}],
-	axisY: {
-		title: "Number of People Employed"
-	},
-	data: [{
-		type: "stepLine",
-		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
-	}]
-});
-chart.render();
- 
-}
-</script>
 
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 
-</body>
-</html>
+                                        <div class="card col-lg-4 mb-4">
+                                            <h4 style="color:blue;">Budget Overview</h4>
+                                            <div class="mb-2">
+                                                <span class="display-4 text-black">$48k</span>
+                                                <span class="text-black-50">per year</span>
+                                            </div>
+                                        </div>
 
-</body>
-</html>
+                                        <!-- Content Column -->
+                                        <div class="col-lg-4 mb-4">
+
+                                            <!-- Project Card Example -->
+                                            <div class="card shadow mb-4">
+                                                <div class="card-header py-3">
+                                                    <h4 class="m-0 font-weight-bold text-primary">Projects</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="small font-weight-bold">Server Migration <span
+                                                            class="float-right">20%</span></h4>
+                                                    <div class="progress mb-4">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                            style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                    <h4 class="small font-weight-bold">Sales Tracking <span
+                                                            class="float-right">40%</span></h4>
+                                                    <div class="progress mb-4">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                            style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                    <h4 class="small font-weight-bold">Customer Database <span
+                                                            class="float-right">60%</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card col-lg-4 mb-4">
+                                            <div class="card-header">
+                                                <h4 style="color:blue;">People</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- Item 1-->
+                                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                                    <div class="d-flex align-items-center flex-shrink-0 me-3">
+                                                        <div class="avatar avatar-xl me-3 bg-gray-200"><img
+                                                                class="avatar-img img-fluid"
+                                                                src="assets/img/illustrations/profiles/profile-1.png"
+                                                                alt=""></div>
+                                                        <div class="d-flex flex-column fw-bold">
+                                                            <a class="text-dark line-height-normal mb-1" href="#!">Krishna</a>
+                                                            <div class="small text-muted line-height-normal">Position
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown no-caret">
+                                                        <button
+                                                            class="btn btn-transparent-dark btn-icon dropdown-toggle"
+                                                            id="dropdownPeople1" type="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-more-vertical">
+                                                                <circle cx="12" cy="12" r="1"></circle>
+                                                                <circle cx="12" cy="5" r="1"></circle>
+                                                                <circle cx="12" cy="19" r="1"></circle>
+                                                            </svg></button>
+                                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
+                                                            aria-labelledby="dropdownPeople1">
+                                                            <a class="dropdown-item" href="#!">Action</a>
+                                                            <a class="dropdown-item" href="#!">Another action</a>
+                                                            <a class="dropdown-item" href="#!">Something else here</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Item 2-->
+                                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                                    <div class="d-flex align-items-center flex-shrink-0 me-3">
+                                                        <div class="avatar avatar-xl me-3 bg-gray-200"><img
+                                                                class="avatar-img img-fluid"
+                                                                src="assets/img/illustrations/profiles/profile-2.png"
+                                                                alt=""></div>
+                                                        <div class="d-flex flex-column fw-bold">
+                                                            <a class="text-dark line-height-normal mb-1"
+                                                                href="#!">Kumar</a>
+                                                            <div class="small text-muted line-height-normal">Position
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown no-caret">
+                                                        <button
+                                                            class="btn btn-transparent-dark btn-icon dropdown-toggle"
+                                                            id="dropdownPeople2" type="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-more-vertical">
+                                                                <circle cx="12" cy="12" r="1"></circle>
+                                                                <circle cx="12" cy="5" r="1"></circle>
+                                                                <circle cx="12" cy="19" r="1"></circle>
+                                                            </svg></button>
+                                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
+                                                            aria-labelledby="dropdownPeople2">
+                                                            <a class="dropdown-item" href="#!">Action</a>
+                                                            <a class="dropdown-item" href="#!">Another action</a>
+                                                            <a class="dropdown-item" href="#!">Something else here</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Item 3-->
+                                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                                    <div class="d-flex align-items-center flex-shrink-0 me-3">
+                                                        <div class="avatar avatar-xl me-3 bg-gray-200"><img
+                                                                class="avatar-img img-fluid"
+                                                                src="assets/img/illustrations/profiles/profile-3.png"
+                                                                alt=""></div>
+                                                        <div class="d-flex flex-column fw-bold">
+                                                            <a class="text-dark line-height-normal mb-1" href="#!">Krishnakumar</a>
+                                                            <div class="small text-muted line-height-normal">Position
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown no-caret">
+                                                        <button
+                                                            class="btn btn-transparent-dark btn-icon dropdown-toggle"
+                                                            id="dropdownPeople3" type="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-more-vertical">
+                                                                <circle cx="12" cy="12" r="1"></circle>
+                                                                <circle cx="12" cy="5" r="1"></circle>
+                                                                <circle cx="12" cy="19" r="1"></circle>
+                                                            </svg></button>
+                                                        <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
+                                                            aria-labelledby="dropdownPeople3">
+                                                            <a class="dropdown-item" href="#!">Action</a>
+                                                            <a class="dropdown-item" href="#!">Another action</a>
+                                                            <a class="dropdown-item" href="#!">Something else here</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+
+
+
+                                <div class="card col-lg-4 mb-4">
+                                    <h4 style="color:green;">Today </h4>
+                                    <h4><u>Ticket Submitted</u></h4>
+                                    <div class="mb-2">
+                                        <center> <span class="display-4 text-black"
+                                                style="background-color:powderblue;">16</span></center>
+
+                                    </div>
+                                </div>
+
+                                <!-- Content Column -->
+                                <div class="col-lg-4 mb-4">
+
+                                    <!-- Project Card Example -->
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header py-3">
+                                            <h4 style="color:green;">Ticket by Statuse</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="small font-weight-bold">Solved <span class="float-right">7</span>
+                                            </h4>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-danger" role="progressbar"
+                                                    style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">In Progress <span
+                                                    class="float-right">8</span></h4>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-warning" role="progressbar"
+                                                    style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">Available <span
+                                                    class="float-right">50</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card col-lg-4 mb-4">
+                                    <div class="card-header">
+                                        <h4 style="color:green;">Top Ticket Solvers</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Item 1-->
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <div class="d-flex align-items-center flex-shrink-0 me-3">
+                                                <div class="avatar avatar-xl me-3 bg-gray-200"><img
+                                                        class="avatar-img img-fluid"
+                                                        src="assets/img/illustrations/profiles/profile-1.png" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column fw-bold">
+                                                    <a class="text-dark line-height-normal mb-1" href="#!">Employee
+                                                        1</a>
+                                                    <div class="small text-muted line-height-normal">Position</div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown no-caret">
+                                                <button class="btn btn-transparent-dark btn-icon dropdown-toggle"
+                                                    id="dropdownPeople1" type="button" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-more-vertical">
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg></button>
+                                                <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
+                                                    aria-labelledby="dropdownPeople1">
+                                                    <a class="dropdown-item" href="#!">Action</a>
+                                                    <a class="dropdown-item" href="#!">Another action</a>
+                                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Item 2-->
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <div class="d-flex align-items-center flex-shrink-0 me-3">
+                                                <div class="avatar avatar-xl me-3 bg-gray-200"><img
+                                                        class="avatar-img img-fluid"
+                                                        src="assets/img/illustrations/profiles/profile-2.png" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column fw-bold">
+                                                    <a class="text-dark line-height-normal mb-1" href="#!">Employee
+                                                        2</a>
+                                                    <div class="small text-muted line-height-normal">Position</div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown no-caret">
+                                                <button class="btn btn-transparent-dark btn-icon dropdown-toggle"
+                                                    id="dropdownPeople2" type="button" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-more-vertical">
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg></button>
+                                                <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
+                                                    aria-labelledby="dropdownPeople2">
+                                                    <a class="dropdown-item" href="#!">Action</a>
+                                                    <a class="dropdown-item" href="#!">Another action</a>
+                                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Item 3-->
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <div class="d-flex align-items-center flex-shrink-0 me-3">
+                                                <div class="avatar avatar-xl me-3 bg-gray-200"><img
+                                                        class="avatar-img img-fluid"
+                                                        src="assets/img/illustrations/profiles/profile-3.png" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column fw-bold">
+                                                    <a class="text-dark line-height-normal mb-1" href="#!">Employee
+                                                        3</a>
+                                                    <div class="small text-muted line-height-normal">Position</div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown no-caret">
+                                                <button class="btn btn-transparent-dark btn-icon dropdown-toggle"
+                                                    id="dropdownPeople3" type="button" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-more-vertical">
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="12" cy="5" r="1"></circle>
+                                                        <circle cx="12" cy="19" r="1"></circle>
+                                                    </svg></button>
+                                                <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
+                                                    aria-labelledby="dropdownPeople3">
+                                                    <a class="dropdown-item" href="#!">Action</a>
+                                                    <a class="dropdown-item" href="#!">Another action</a>
+                                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                      <div class="card-header">
-                        No of Customer
-                      </div>
-                      <div class="card-body">
-                        <h1>1 to 500 </h1>
-                      </div>
-            </div>
-        </div>
-    </div>
-    <?php include_once('../navscript.php');?>
-</body>
-
-</html>
-<?php
- 
-$dataPoints = array(
-	array("y"=> 26274, "label"=> "2007"),
-	array("y"=> 26380, "label"=> "2008"),
-	array("y"=> 25058, "label"=> "2009"),
-	array("y"=> 24864, "label"=> "2010"),
-	array("y"=> 26707, "label"=> "2011"),
-	array("y"=> 29309, "label"=> "2012"),
-	array("y"=> 34519, "label"=> "2013"),
-	array("y"=> 40101, "label"=> "2014"),
-	array("y"=> 48401, "label"=> "2015"),
-	array("y"=> 58580, "label"=> "2016")
-);
- 
-?>
-<!DOCTYPE HTML>
-<html>
-<head>
-<script>
-window.onload = function () {
- 
-var chart = new CanvasJS.Chart("chartContainer", {
-	title: {
-		text: "Employment in SL"
-	},
-	subtitles: [{
-		text: "2010 to 2023"
-	}],
-	axisY: {
-		title: "Number of People Employed"
-	},
-	data: [{
-		type: "stepLine",
-		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
-	}]
-});
-chart.render();
- 
-}
-</script>
-</head>
-<body>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-</body>
-</html>  
