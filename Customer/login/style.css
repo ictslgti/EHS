@@ -1,0 +1,82 @@
+body{
+    background: #e4e9f7;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin-top: 100px;
+    background: #ffffff;
+    height: 750px;
+    border-radius: 20px;
+    /*border: 5px solid #e7e7e7;*/
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.font{
+    width: 400px;
+    margin: 20vh;
+}
+
+h3{
+    text-align: center;
+    color: #000000;
+}
+
+h5{
+    text-align: center;
+    color: #000000;
+}
+
+/*.REGISTER{
+    width: 360px;
+    height: 800px;
+    margin: auto;
+    background: #e4e9f7;
+    border-radius: 3px;
+}
+
+.form button{
+    background-color: #069f1a;
+    color: white;
+    border: 1px solid #069f1a;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}*/
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group input{
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 10px;
+   
+}
+
+.form-group input:focus{
+    outline: 0;
+}
+
+.error{
+    color: rgb(242, 18, 18);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form-group.success input{
+    border-color: #0cc477;
+}
+
+.form-group.error input{
+    border-color: rgb(206, 67, 67);
+}
